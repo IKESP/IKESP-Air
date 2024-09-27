@@ -43,11 +43,11 @@ For quick reference, please see the below table. While it doesn't matter too muc
 |5V | IKEA 5V|
 |GND | IKEA GND|
 |D4 | IKEA Fan|
-|D5 | PM1006 TX|
+|D3 | PM1006 TX|
 |3.3V | I<sup>2</sup>C VIN |
 |GND | I<sup>2</sup>C VGND |
-|D1 | I<sup>2</sup>C SCL |
-|D2 | I<sup>2</sup>C SDA |
+|D7 | I<sup>2</sup>C SCL |
+|D8 | I<sup>2</sup>C SDA |
 
 ## Connecting to Home Assistant
 Connecting to Home Assistant should also be painless. Ideally, once flashed with ESPHome and online it should appear in your integrations screen, asking you if you want to configure a new integration. If not, you can manually add the device but selecting Add Integration, searching for ESPHome, and adding the device using its IP address and port (default should be 6053). For more help, see the [guide on esphome.io](https://esphome.io/guides/getting_started_hassio.html).
