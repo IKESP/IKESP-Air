@@ -1,6 +1,6 @@
 substitutions:
-  name: "ikesp-aq" #Sets the $name variable for our device. This will be used as the entity name in Home Assistant. Sensors will show as "$name sensorname", for example "$name Temperature" for the temperature sensor.
-  friendly_name: "IKESP AQ"
+  name: "ikesp-air" #Sets the $name variable for our device. This will be used as the entity name in Home Assistant. Sensors will show as "$name sensorname", for example "$name Temperature" for the temperature sensor.
+  friendly_name: "IKESP Air"
 
 esphome:
   name: "${name}"
@@ -9,7 +9,7 @@ esphome:
   platform: ESP8266
   board: d1_mini
   project:
-    name: CalumDay.IKESP-AQ
+    name: IKESP.IKESP-Air
     version: dev
 
 wifi:
