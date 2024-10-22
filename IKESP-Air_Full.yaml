@@ -38,7 +38,7 @@ logger: # This section allows us to enable loggin of individual sensors in the E
 
 # Adding uart for PM1006 sensor
 uart:
-  - rx_pin: D3
+  - rx_pin: D7
     baud_rate: 9600
 
 # Turn on the onboard LED on the D1 mini when the PM1006 is taking a reading
@@ -47,13 +47,13 @@ binary_sensor:
     name: $name Fan
     id: fan
     pin:
-      number: D4
+      number: D6
       inverted: true
 
 #Enable I2C for the BME280 and CCS811 boards
 i2c:
-  sda: D8
-  scl: D7
+  sda: D1
+  scl: D2
   scan: true
   id: bus_a
 
